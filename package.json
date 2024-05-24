@@ -6,9 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/NangoHQ/eslint-config.git"
   },
-  "main": "index.js",
+  "main": ".eslintrc.js",
   "files": [
-    ""
+    ".eslintrc.js",
+    "tsconfig.json"
   ],
   "keywords": [
     "eslint",
