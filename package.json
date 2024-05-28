@@ -10,6 +10,7 @@
   "main": ".eslintrc.js",
   "files": [
     ".eslintrc.js",
+    "strict.js",
     "tsconfig.json"
   ],
   "keywords": [
@@ -19,6 +20,9 @@
     "es6",
     "nango"
   ],
+  "scripts": {
+    "test": "eslint . --ext .ts"
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.10.0",
     "@typescript-eslint/parser": "^7.10.0",

@@ -14,8 +14,6 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-type-checked",
-    "plugin:@typescript-eslint/strict",
-    "plugin:@typescript-eslint/strict-type-checked",
     "plugin:@typescript-eslint/stylistic",
     "plugin:prettier/recommended",
     "plugin:import/errors",
@@ -28,35 +26,27 @@ module.exports = {
     "prettier/prettier": 2,
 
     // --- Typescript
-    "@typescript-eslint/no-dynamic-delete": "off",
-    "@typescript-eslint/no-redundant-type-constituents": "off",
-    "@typescript-eslint/no-inferrable-types": "off",
+    // Recommended
+    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/no-redundant-type-constituents": "warn",
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-non-null-assertion": "warn",
-    "@typescript-eslint/require-await": "off",
-    "@typescript-eslint/no-floating-promises": "off",
-    "@typescript-eslint/no-unsafe-assignment": "off",
-    "@typescript-eslint/no-unsafe-member-access": "warn",
-    "@typescript-eslint/no-unsafe-call": "warn",
-    "@typescript-eslint/no-unsafe-argument": "warn",
-    "@typescript-eslint/no-misused-promises": "warn",
-    "@typescript-eslint/no-unsafe-return": "warn",
-    "@typescript-eslint/no-empty-function": "warn",
-    "@typescript-eslint/no-unsafe-enum-comparison": "warn",
+    "@typescript-eslint/require-await": "error",
+    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/no-unsafe-return": "off",
+    "@typescript-eslint/no-unsafe-enum-comparison": "off",
     "@typescript-eslint/restrict-template-expressions": [
-      "warn",
+      "error",
       {
         allowNumber: true,
         allowBoolean: true,
       },
     ],
-    "@typescript-eslint/await-thenable": "error",
-    "@typescript-eslint/no-invalid-void-type": "warn",
-    "@typescript-eslint/no-base-to-string": "warn",
-    "@typescript-eslint/restrict-plus-operands": "warn",
-    "@typescript-eslint/consistent-type-exports": "error",
-    "@typescript-eslint/no-unnecessary-condition": "warn",
-    "@typescript-eslint/only-throw-error": "warn",
+    "@typescript-eslint/no-base-to-string": "off",
+    "@typescript-eslint/restrict-plus-operands": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
@@ -69,18 +59,18 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
+
+    // Stylistic
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/no-empty-function": "warn",
+
+    // Others
+    "@typescript-eslint/consistent-type-exports": "error",
     "@typescript-eslint/consistent-type-imports": [
       "error",
       {
         prefer: "type-imports",
         fixStyle: "separate-type-imports",
-      },
-    ],
-    "@typescript-eslint/no-confusing-void-expression": [
-      "warn",
-      {
-        ignoreVoidOperator: true,
-        ignoreArrowShorthand: true,
       },
     ],
 
