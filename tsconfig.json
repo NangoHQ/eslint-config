@@ -100,7 +100,7 @@
   },
   "include": [
     ".eslintrc.js",
-    "strict.js",
-    "test"
+    "src/",
+    "test/"
   ]
 }

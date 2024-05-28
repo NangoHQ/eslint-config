@@ -3,4 +3,6 @@ const any: any = {};
 any.top;
 let top = 't';
 
-console.log(top);
+const issues = any.top;
+
+console.log(top, issues);
