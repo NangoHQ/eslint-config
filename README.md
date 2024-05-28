@@ -7,9 +7,18 @@ npm i -D @nangohq/eslint-config
 ````
 
 ```js
+// Basic linter
 {
     "extends": [
-        "@nangohq"
+        "@nangohq/eslint-config/base"
+    ]
+}
+
+// Strict
+{
+    "extends": [
+        "@nangohq/eslint-config/base",
+        "@nangohq/eslint-config/strict"
     ]
 }
 ```
