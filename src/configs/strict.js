@@ -17,6 +17,13 @@ module.exports = {
     "@typescript-eslint/no-unsafe-enum-comparison": "error",
     "@typescript-eslint/no-base-to-string": "error",
     "@typescript-eslint/restrict-plus-operands": "error",
+    "@typescript-eslint/restrict-template-expressions": [
+      "error",
+      {
+        allowNumber: true,
+        allowBoolean: true,
+      },
+    ],
 
     // Strict
     "@typescript-eslint/no-non-null-assertion": "warn",

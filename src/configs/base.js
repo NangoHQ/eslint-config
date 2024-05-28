@@ -39,13 +39,7 @@ module.exports = {
     "@typescript-eslint/no-misused-promises": "off",
     "@typescript-eslint/no-unsafe-return": "off",
     "@typescript-eslint/no-unsafe-enum-comparison": "off",
-    "@typescript-eslint/restrict-template-expressions": [
-      "error",
-      {
-        allowNumber: true,
-        allowBoolean: true,
-      },
-    ],
+    "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/no-base-to-string": "off",
     "@typescript-eslint/restrict-plus-operands": "off",
     "@typescript-eslint/no-unused-vars": [
